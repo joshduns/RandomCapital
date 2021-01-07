@@ -54,7 +54,6 @@ const findRandomCapital = () => {
         let capLong = capital.attributes.LONGITUDE;
         let d = distance(lat, long, capLat, capLong, 'M');
         if (closestDistance === undefined || d < closestDistance) {
-            console.log(`${capital.attributes.CITY} is closer. ${d} < ${closestDistance}`)
             closestDistance = d;
             closestCapital = capital;
         }
